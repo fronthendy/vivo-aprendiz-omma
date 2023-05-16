@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header .logo {
+    background-color: #FFC107;
+    text-align: center;
+}
+
+header .menu {
+    background-color: #FFA000; /* background-color = cor de fundo */
+    /* flexbox (mais detalhes na prox. aula) */
+    display: flex; /* ativar flexbox */
+    justify-content: center; /* centralizar na horizontal */
+}
+
+header .menu ul {
+    margin: 0; /* margin = espaçamento externo */
+    list-style: none; /* tirar marcador da lista */
+}
+
+header .menu ul li {
+    display: inline-block;
+    padding: 10px 15px; /* padding = espaçamento interno | 10px pra cima e pra baixo, 15px pras laterais */
+}
+
+header .menu ul li a {
+    text-decoration: none; /* tirar sublinhado */
+    color: #FDFDFD; /* muda a cor do texto */
+}
+
+main section.banner {
+    height: 600px; /* altura */
+    background-color: cadetblue; /* cor de fundo pra teste */
+    background-image: url(../imagens/banner-home.png); /* imagem de fundo */
+    background-repeat: no-repeat; /* imagem não vai repetir */
+    background-size: cover; /* imagem vai cobrir todo o elemento section */
+}
+
+main section.banner .container {
+    display: flex;
+    justify-content: flex-end; /* alinhamento horizontal pra direita */
+    align-items: center; /* alinhamento vertical centralizado */
+    height: 600px; /* altura */
+}
+
+main section.banner h1 {
+    font-size: 70px;
+    text-transform: lowercase; /* tudo com letra minuscula */
+    color: #fff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.36); /* sombra no texto */
+    padding: 100px;
+}
