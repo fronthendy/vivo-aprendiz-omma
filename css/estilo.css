@@ -340,4 +340,11 @@ section.contato .container {
     border: 1px solid #FFA000;
     padding: 5px 15px;
     border-radius: 30px;
+    transition: 0.5s;
+}
+
+.formulario form button:hover {
+    background-color: green;
+    border-color: green;
+    cursor: pointer;
 }
