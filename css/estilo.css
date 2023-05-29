@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
+
+* {
+    box-sizing: border-box;
+    /* garante que o elemento ocupa no maximo o espaço definido no width */
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -238,6 +244,7 @@ small.tag {
     display: inline-block;
     border: 1px solid #176902;
     border-radius: 47px;
+    /* bordas arredondadas */
     color: #176902;
     padding: 5px 10px;
     margin: 10px 0;
@@ -261,4 +268,76 @@ aside article.receita-relacionada h3 {
     margin: 0;
     text-transform: lowercase;
     text-align: center;
+}
+
+/* Página Contato */
+
+.banner-contato {
+    width: 100%;
+    height: 400px;
+    background-image: url(../imagens/banner-contato.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-contato .container,
+section.contato .container {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+}
+
+.banner-contato .container h1 {
+    color: #fff;
+    font-size: 70px;
+}
+
+.banner-vertical {
+    width: 30%;
+    height: 700px;
+    background-image: url(../imagens/banner-vertical.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+}
+
+.formulario {
+    border: 1px solid #FFA000;
+    border-radius: 20px;
+    margin: 0 30px;
+    padding: 30px;
+    width: 70%;
+}
+
+.formulario h2 {
+    color: #FFA000;
+}
+
+.formulario form input {
+    width: 100%;
+    border: 1px solid #FFA000;
+    border-radius: 7px;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.formulario form textarea {
+    width: 100%;
+    border: 1px solid #FFA000;
+    border-radius: 7px;
+    padding: 10px;
+    margin: 5px 0;
+    height: 200px;
+}
+
+.formulario form button {
+    font-size: 16px;
+    background-color: #FFA000;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    border: 1px solid #FFA000;
+    padding: 5px 15px;
+    border-radius: 30px;
 }
