@@ -72,14 +72,16 @@ main section.receitas-principais h2 {
 
 .lista-receitas {
     display: flex; /* ativando flexbox */
-    justify-content: space-evenly; /* espaçamento igual ao redor dos elementos (horizontal) */
+    justify-content: space-between; /* espaçamento igual ao redor dos elementos (horizontal) */
     align-items: flex-start; /* todos os elementos alinhados ao topo */
+    flex-wrap: wrap; /* permite que aconteça a quebra de linha */
 }
 
 .lista-receitas article {
     /* border: 1px solid orange; */ /* borda somente para teste */
     width: 345px; /* largura do article */
     text-align: center; /* centralizando tudo no article */
+    margin-bottom: 60px; /* espaçamento inferior */
 }
 
 .lista-receitas article .thumb {
@@ -150,4 +152,21 @@ footer .container {
 
 footer p {
     padding: 0 15px;
+}
+
+
+/* Página 2: Todas as Receitas */
+
+main section.todas-receitas .container {
+    min-height: 600px; /* altura minima */
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+main section.todas-receitas h2 {
+    color: #FFA000;
+    font-weight: bold;
+    font-size: 50px;
+    text-transform: lowercase;
 }
